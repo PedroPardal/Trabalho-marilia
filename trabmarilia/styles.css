@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box; /* Para garantir que o padding e a borda sejam incluídos nas dimensões */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura total da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.container {
+    width: 100%; /* Largura total */
+    max-width: 600px; /* Largura máxima */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+#quiz-container {
+    margin-top: 20px;
+}
+
+#question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+#options {
+    margin: 20px 0;
+}
+
+.option {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    margin: 10px 0; /* Aumenta o espaço entre as opções */
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.2s;
+    display: block; /* Faz com que as opções apareçam uma abaixo da outra */
+}
+
+.option:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.5em;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+#feedback {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #dc3545;
+}
